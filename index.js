@@ -222,22 +222,82 @@ function calculateCube (number) {
 
 console.log(calculateCube(5));
 // D.
+function isVowel (letter) {
+	letter = letter.toLowerCase();
+	if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u") {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(isVowel("a"));
+console.log(isVowel("b"));
+console.log(isVowel("A"));
 // E.
+function getTwoLengths(str1, str2){
+	return [str1.length, str2.length]; 
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // F.
+function getMultipleLengths(strings) {
+	let stringsLength = [];
+
+	for(let i=0; i <strings.length; i++) {
+		stringsLength.push(strings[i].length);
+	}
+
+	return stringsLength;
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
 // G.
+function maxOfThree(num1,num2,num3) {
+	if (num1 >= num2 && num1 >= num3) {
+		return num1;
+	  } else if (num2 >= num1 && num2 >= num3) {
+		return num2;
+	  } else {
+		return num3;
+	  }
+}
+console.log(maxOfThree(19, 72, 100));
 // H.
+function printLongestWord(words) {
+	let longestWord = words[0];
+  
+	for (let i = 1; i < words.length; i++) {
+	  if (words[i].length > longestWord.length) {
+		longestWord = words[i];
+	  }
+	}
+	return longestWord;
+  }
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 //_____________________________________________________________
-
-
-
-
-
 
 // V. Objects
 // A.
+const user = {
+	name: 'Alifa',
+	email: 'alifa@email.com',
+	age: 30,
+	purchased: [],
+};
+
 // B.
+user.email = 'alifawatkins@email.com'
+const newAge = user.age++
+
+console.log(user.age);
 // C.
+user.location = 'Boston, MA';
+console.log(user)
 // D.
+user['purchased'].push('peace of mind','Merino jodhpurs');
+
+console.log(user.purchased[1]);
 // E.
 // F.
 // G.
