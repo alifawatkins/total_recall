@@ -299,8 +299,41 @@ user['purchased'].push('peace of mind','Merino jodhpurs');
 
 console.log(user.purchased[1]);
 // E.
+user.friend = {
+    name: "Alex Abcde",
+    age: 33,
+	location: "Tokyo",
+	purchased: [],
+}
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55; 
+user.friend['purchased'].push('The One Ring');
+user.friend['purchased'].push('A latte');
+console.log(user.friend.purchased[1])
 // F.
+for (let i = 0; i < user['purchased'].length; i++) {
+	console.log(user['purchased'][i]);
+  }
+  
+  for (let i = 0; i < user.friend['purchased'].length; i++) {
+	console.log(user.friend['purchased'][i]);
+  }
 // G.
+function updateUser() {
+	user.age += 1;
+	user.name = user.name.toUpperCase();
+  }
+
+console.log(user);
+
+function oldAndLoud(person) {
+	person.age += 1;
+	person.name = person.name.toUpperCase();
+  }
+
+oldAndLoud(user);
+console.log(user);
 //_____________________________________________________________
 
 
