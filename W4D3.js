@@ -47,7 +47,10 @@ console.log(dart);
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+for (let index = 0; index < ninjaTurtles.length; index++) {
+    console.log(ninjaTurtles[index].toUpperCase())
+}
 
 ////////////////////////////////
 // Methods, Revisited
