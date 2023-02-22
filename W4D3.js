@@ -1,3 +1,5 @@
+// https://perscholas.instructure.com/courses/1297/pages/week-4-day-3-lecture-arrays-loops-and-conditional-reps?module_item_id=776630
+
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
@@ -117,3 +119,15 @@ console.log(waldo);
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+nums.sort((a, b) => a - b);
+
+const midIndex = Math.floor(nums.length / 2);
+
+if (nums.length % 2 === 0) {
+  const median = (nums[midIndex - 1] + nums[midIndex]) / 2;
+  console.log(median);
+} else {
+  console.log(nums[midIndex]);
+}
