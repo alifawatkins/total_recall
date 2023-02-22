@@ -98,8 +98,22 @@ console.log(waldo);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
-
-
+  
+  const kittyTalk = [
+    "...human...why you taking pictures of me?...",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away..."
+  ];
+  
+  for (let meow = 0; meow < 20; meow++) {
+    console.log("Love me, pet me! HSSSSSS!");
+    
+    if (meow % 2 === 0) {
+      const randomIndex = Math.floor(Math.random() * kittyTalk.length);
+      console.log(kittyTalk[randomIndex]);
+    }
+  }
+  
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
